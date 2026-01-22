@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-starterkit",
+  "name": "notion-cms-blog",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,22 +10,12 @@
     "type-check": "tsc --noEmit",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,css,md}\"",
     "prepare": "husky",
-    "component:add": "npx shadcn@latest add",
-    "component:all": "npx shadcn@latest add button card dialog dropdown-menu input label select separator sheet table toast",
-    "component:form": "npx shadcn@latest add form input label textarea select checkbox radio-group",
-    "scaffold:page": "node scripts/scaffold-page.js",
-    "scaffold:api": "node scripts/scaffold-api.js",
     "clean": "rimraf .next out",
-    "clean:cache": "rimraf .next out node_modules/.cache",
-    "clean:all": "rimraf .next out node_modules/.cache node_modules package-lock.json",
-    "fresh": "npm run clean:all && npm install",
-    "reset": "npm run clean && npm run dev",
-    "check": "npm run type-check && npm run lint",
-    "check:fix": "npm run format && npm run lint -- --fix",
-    "pre-deploy": "npm run check && npm run build"
+    "check": "npm run type-check && npm run lint"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
+    "@notionhq/client": "^5.7.0",
     "@radix-ui/react-dialog": "^1.1.4",
     "@radix-ui/react-dropdown-menu": "^2.1.4",
     "@radix-ui/react-slot": "^1.1.1",
