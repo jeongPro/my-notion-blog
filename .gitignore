@@ -35,3 +35,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .claude/
+
+# MCP/Task Manager
+.mcp.json
+shrimp_data/
